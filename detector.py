@@ -9,8 +9,6 @@ from functools import partial
 import math
 import asyncio
 import typing
-import redis
-import os
 
 from parse_data import get_all_star_gifts, check_is_star_gift_upgradable
 from star_gifts_data import StarGiftData, StarGiftsData
@@ -19,8 +17,6 @@ import utils
 import constants
 import config
 
-REDIS_URL = os.getenv("REDIS_URL")
-r = redis.Redis.from_url(REDIS_URL)
 
 
 timezone = _timezone(config.TIMEZONE)
