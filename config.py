@@ -1,7 +1,7 @@
 import logging
+from pathlib import Path
 
 import constants
-
 
 SESSION_NAME = "account"
 
@@ -10,24 +10,22 @@ API_HASH = "0c649b615f94e6c8eca8de196249b734"
 
 BOT_TOKENS = ["7286764077:AAFMqxpZqbAar-5Kqj7w7d7hfbf5oA_5ZQc"]
 
-
 CHECK_INTERVAL = 60.0
 CHECK_UPGRADES_PER_CYCLE = 2
 
-DATA_FILEPATH = constants.WORK_DIRPATH / "star_gifts.json"
+DATA_FILEPATH = Path("/data/star_gifts.json")
+
 DATA_SAVER_DELAY = 2.0
-NOTIFY_CHAT_ID = -1002614267492  # https://t.me/gifts_detector
-NOTIFY_UPGRADES_CHAT_ID = -1002751596218  # https://t.me/gifts_upgrades_detector
-                                          # If you don't need upgrades, set it to `None` or `9`.
-                                          # Additionally, bots can't check upgrades for gifts,
-                                          # Telegram will raise [400 BOT_METHOD_INVALID]
+NOTIFY_CHAT_ID = -1002614267492
+NOTIFY_UPGRADES_CHAT_ID = -1002751596218
+
 NOTIFY_AFTER_STICKER_DELAY = 10.0
 NOTIFY_AFTER_TEXT_DELAY = 10.0
 TIMEZONE = "Europe/Warsaw"
+
 CONSOLE_LOG_LEVEL = logging.DEBUG
 FILE_LOG_LEVEL = logging.INFO
 HTTP_REQUEST_TIMEOUT = 20.0
-
 
 NOTIFY_TEXT = """\
 {title}
