@@ -21,8 +21,8 @@ NOTIFY_UPGRADES_CHAT_ID = -1002751596218  # https://t.me/gifts_upgrades_detector
                                           # If you don't need upgrades, set it to `None` or `9`.
                                           # Additionally, bots can't check upgrades for gifts,
                                           # Telegram will raise [400 BOT_METHOD_INVALID]
-NOTIFY_AFTER_STICKER_DELAY = 1.0
-NOTIFY_AFTER_TEXT_DELAY = 2.0
+NOTIFY_AFTER_STICKER_DELAY = 30.0
+NOTIFY_AFTER_TEXT_DELAY = 30.0
 TIMEZONE = "Europe/Warsaw"
 CONSOLE_LOG_LEVEL = logging.DEBUG
 FILE_LOG_LEVEL = logging.INFO
