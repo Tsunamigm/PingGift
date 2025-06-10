@@ -34,6 +34,10 @@ NOTIFY_TEXT = """\
 {total_amount}{available_amount}{sold_out}
 💎 Price: {price} ⭐️
 ♻️ Convert price: {convert_price} ⭐️
+
+Marketplaces: <a href="https://t.me/tonnel_network_bot/gifts?startapp=ref_879664600"Tonnel</a>
+
+Case: <a href="https://t.me/case_official_bot/case?startapp=ref_fu5XZCF4jQZBL2R"Case</a>
 """
 
 NOTIFY_TEXT_TITLES = {
